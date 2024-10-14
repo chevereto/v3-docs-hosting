@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bulk content importer | V3 Docs</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.svg">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/logo.svg">
+    <link rel="mask-icon" href="/logo.svg" color="#3eaf7c">
+    <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-WL8RV7RGEN"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-WL8RV7RGEN');</script>
+    <meta name="description" content="Documentation for Chevereto image hosting software (V3)">
+    <meta name="theme-color" content="#23a8e0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/logo.svg">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="/assets/css/0.styles.feeb6d91.css" as="style"><link rel="preload" href="/assets/js/app.7e027b56.js" as="script"><link rel="preload" href="/assets/js/3.c8df3c60.js" as="script"><link rel="preload" href="/assets/js/13.8cb048d0.js" as="script"><link rel="preload" href="/assets/js/8.26b444c0.js" as="script"><link rel="preload" href="/assets/js/5.8cd91fac.js" as="script"><link rel="prefetch" href="/assets/js/10.5a547475.js"><link rel="prefetch" href="/assets/js/11.d519e1f3.js"><link rel="prefetch" href="/assets/js/12.5fbcf9d4.js"><link rel="prefetch" href="/assets/js/14.fc17878b.js"><link rel="prefetch" href="/assets/js/15.8fa387b7.js"><link rel="prefetch" href="/assets/js/16.9ae1e80b.js"><link rel="prefetch" href="/assets/js/17.5fac433e.js"><link rel="prefetch" href="/assets/js/18.e57f6bae.js"><link rel="prefetch" href="/assets/js/19.bcd0674c.js"><link rel="prefetch" href="/assets/js/20.9fb8ae72.js"><link rel="prefetch" href="/assets/js/21.a52a7ee8.js"><link rel="prefetch" href="/assets/js/22.4e476823.js"><link rel="prefetch" href="/assets/js/23.13c29f17.js"><link rel="prefetch" href="/assets/js/24.051a915a.js"><link rel="prefetch" href="/assets/js/25.0b13419c.js"><link rel="prefetch" href="/assets/js/26.089daed0.js"><link rel="prefetch" href="/assets/js/27.24e5cf7b.js"><link rel="prefetch" href="/assets/js/28.ecfffaa3.js"><link rel="prefetch" href="/assets/js/29.5cebe39d.js"><link rel="prefetch" href="/assets/js/30.2f17c38c.js"><link rel="prefetch" href="/assets/js/31.50225bb5.js"><link rel="prefetch" href="/assets/js/32.73d10a16.js"><link rel="prefetch" href="/assets/js/33.d15b77d1.js"><link rel="prefetch" href="/assets/js/34.dab2aeb5.js"><link rel="prefetch" href="/assets/js/35.6fa2213c.js"><link rel="prefetch" href="/assets/js/36.4a6d9a4b.js"><link rel="prefetch" href="/assets/js/37.94e91ca7.js"><link rel="prefetch" href="/assets/js/38.6c045389.js"><link rel="prefetch" href="/assets/js/39.9487241c.js"><link rel="prefetch" href="/assets/js/4.55665da6.js"><link rel="prefetch" href="/assets/js/40.81602670.js"><link rel="prefetch" href="/assets/js/41.d99fc085.js"><link rel="prefetch" href="/assets/js/42.d9217e04.js"><link rel="prefetch" href="/assets/js/43.72817589.js"><link rel="prefetch" href="/assets/js/44.37229739.js"><link rel="prefetch" href="/assets/js/45.e2217aaa.js"><link rel="prefetch" href="/assets/js/46.ae6c0d2d.js"><link rel="prefetch" href="/assets/js/47.4be0876b.js"><link rel="prefetch" href="/assets/js/48.d8fb2e1a.js"><link rel="prefetch" href="/assets/js/49.5eff95d0.js"><link rel="prefetch" href="/assets/js/50.b61b6ca8.js"><link rel="prefetch" href="/assets/js/51.47b9b6dd.js"><link rel="prefetch" href="/assets/js/52.ce1be02f.js"><link rel="prefetch" href="/assets/js/53.9068589d.js"><link rel="prefetch" href="/assets/js/54.35cd0349.js"><link rel="prefetch" href="/assets/js/55.8fbc48b2.js"><link rel="prefetch" href="/assets/js/56.6ea6240d.js"><link rel="prefetch" href="/assets/js/57.fd7b2712.js"><link rel="prefetch" href="/assets/js/58.ecc67709.js"><link rel="prefetch" href="/assets/js/59.788a264f.js"><link rel="prefetch" href="/assets/js/6.b8b11188.js"><link rel="prefetch" href="/assets/js/60.4cfbb791.js"><link rel="prefetch" href="/assets/js/61.8c56ebbb.js"><link rel="prefetch" href="/assets/js/62.c9b44379.js"><link rel="prefetch" href="/assets/js/63.070162c3.js"><link rel="prefetch" href="/assets/js/7.350ff68d.js"><link rel="prefetch" href="/assets/js/9.b9118161.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.3e5f6adf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.feeb6d91.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="V3 Docs" class="logo"> <span class="site-name can-hide">V3 Docs</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/get-started/" class="nav-link">
+  Get Started
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Setup Menu" class="dropdown-title"><span class="title">Setup</span> <span class="arrow down"></span></button> <button type="button" aria-label="Setup Menu" class="mobile-dropdown-title"><span class="title">Setup</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/setup/system/requirements.html" class="nav-link">
+  Requirements
+</a></li><li class="dropdown-subitem"><a href="/setup/system/environment.html" class="nav-link">
+  Environment
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Server
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/setup/server/requirements.html" class="nav-link">
+  Requirements
+</a></li><li class="dropdown-subitem"><a href="/setup/server/installation.html" class="nav-link">
+  Installation
+</a></li><li class="dropdown-subitem"><a href="/setup/server/cpanel.html" class="nav-link">
+  cPanel
+</a></li><li class="dropdown-subitem"><a href="/setup/server/settings-file.html" class="nav-link">
+  Settings file
+</a></li><li class="dropdown-subitem"><a href="/setup/server/updating.html" class="nav-link">
+  Updating
+</a></li><li class="dropdown-subitem"><a href="/setup/server/upgrading.html" class="nav-link">
+  Upgrading
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Container
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/setup/container/bootstrapped.html" class="nav-link">
+  Bootstrapped
+</a></li><li class="dropdown-subitem"><a href="/setup/container/registry.html" class="nav-link">
+  Registry
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Manual Menu" class="dropdown-title"><span class="title">Manual</span> <span class="arrow down"></span></button> <button type="button" aria-label="Manual Menu" class="mobile-dropdown-title"><span class="title">Manual</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          First Steps
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manual/first-steps/initial-setup.html" class="nav-link">
+  Initial setup
+</a></li><li class="dropdown-subitem"><a href="/manual/first-steps/setup-cron.html" class="nav-link">
+  Setup cron
+</a></li><li class="dropdown-subitem"><a href="/manual/first-steps/setup-email.html" class="nav-link">
+  Setup email
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Troubleshooting
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manual/troubleshooting/debug.html" class="nav-link">
+  Debug
+</a></li><li class="dropdown-subitem"><a href="/manual/troubleshooting/errors.html" class="nav-link">
+  Errors
+</a></li><li class="dropdown-subitem"><a href="/manual/troubleshooting/server-issues.html" class="nav-link">
+  Server issues
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Features Menu" class="dropdown-title"><span class="title">Features</span> <span class="arrow down"></span></button> <button type="button" aria-label="Features Menu" class="mobile-dropdown-title"><span class="title">Features</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Content
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/content/bulk-content-importer.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Bulk content importer
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Customization
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/customization/language.html" class="nav-link">
+  Language
+</a></li><li class="dropdown-subitem"><a href="/features/customization/routes.html" class="nav-link">
+  Routes
+</a></li><li class="dropdown-subitem"><a href="/features/customization/theme.html" class="nav-link">
+  Theme
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Integrations
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/integrations/external-storage.html" class="nav-link">
+  External storage
+</a></li><li class="dropdown-subitem"><a href="/features/integrations/pup.html" class="nav-link">
+  Pup
+</a></li><li class="dropdown-subitem"><a href="/features/integrations/sharex.html" class="nav-link">
+  Sharex
+</a></li><li class="dropdown-subitem"><a href="/features/integrations/social-login.html" class="nav-link">
+  Social login
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Reference
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/reference/security.html" class="nav-link">
+  Security
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/settings/" class="nav-link">
+  Dashboard
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/get-started/" class="nav-link">
+  Get Started
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Setup Menu" class="dropdown-title"><span class="title">Setup</span> <span class="arrow down"></span></button> <button type="button" aria-label="Setup Menu" class="mobile-dropdown-title"><span class="title">Setup</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/setup/system/requirements.html" class="nav-link">
+  Requirements
+</a></li><li class="dropdown-subitem"><a href="/setup/system/environment.html" class="nav-link">
+  Environment
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Server
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/setup/server/requirements.html" class="nav-link">
+  Requirements
+</a></li><li class="dropdown-subitem"><a href="/setup/server/installation.html" class="nav-link">
+  Installation
+</a></li><li class="dropdown-subitem"><a href="/setup/server/cpanel.html" class="nav-link">
+  cPanel
+</a></li><li class="dropdown-subitem"><a href="/setup/server/settings-file.html" class="nav-link">
+  Settings file
+</a></li><li class="dropdown-subitem"><a href="/setup/server/updating.html" class="nav-link">
+  Updating
+</a></li><li class="dropdown-subitem"><a href="/setup/server/upgrading.html" class="nav-link">
+  Upgrading
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Container
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/setup/container/bootstrapped.html" class="nav-link">
+  Bootstrapped
+</a></li><li class="dropdown-subitem"><a href="/setup/container/registry.html" class="nav-link">
+  Registry
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Manual Menu" class="dropdown-title"><span class="title">Manual</span> <span class="arrow down"></span></button> <button type="button" aria-label="Manual Menu" class="mobile-dropdown-title"><span class="title">Manual</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          First Steps
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manual/first-steps/initial-setup.html" class="nav-link">
+  Initial setup
+</a></li><li class="dropdown-subitem"><a href="/manual/first-steps/setup-cron.html" class="nav-link">
+  Setup cron
+</a></li><li class="dropdown-subitem"><a href="/manual/first-steps/setup-email.html" class="nav-link">
+  Setup email
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Troubleshooting
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manual/troubleshooting/debug.html" class="nav-link">
+  Debug
+</a></li><li class="dropdown-subitem"><a href="/manual/troubleshooting/errors.html" class="nav-link">
+  Errors
+</a></li><li class="dropdown-subitem"><a href="/manual/troubleshooting/server-issues.html" class="nav-link">
+  Server issues
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Features Menu" class="dropdown-title"><span class="title">Features</span> <span class="arrow down"></span></button> <button type="button" aria-label="Features Menu" class="mobile-dropdown-title"><span class="title">Features</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Content
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/content/bulk-content-importer.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Bulk content importer
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Customization
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/customization/language.html" class="nav-link">
+  Language
+</a></li><li class="dropdown-subitem"><a href="/features/customization/routes.html" class="nav-link">
+  Routes
+</a></li><li class="dropdown-subitem"><a href="/features/customization/theme.html" class="nav-link">
+  Theme
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Integrations
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/integrations/external-storage.html" class="nav-link">
+  External storage
+</a></li><li class="dropdown-subitem"><a href="/features/integrations/pup.html" class="nav-link">
+  Pup
+</a></li><li class="dropdown-subitem"><a href="/features/integrations/sharex.html" class="nav-link">
+  Sharex
+</a></li><li class="dropdown-subitem"><a href="/features/integrations/social-login.html" class="nav-link">
+  Social login
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Reference
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/reference/security.html" class="nav-link">
+  Security
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/settings/" class="nav-link">
+  Dashboard
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Features</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Content</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/features/content/bulk-content-importer.html" aria-current="page" class="active sidebar-link">Bulk content importer</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/features/content/bulk-content-importer.html#how-to-use-it" class="sidebar-link">How to use it</a></li><li class="sidebar-sub-header"><a href="/features/content/bulk-content-importer.html#parsing-formats" class="sidebar-link">Parsing formats</a></li><li class="sidebar-sub-header"><a href="/features/content/bulk-content-importer.html#statuses" class="sidebar-link">Statuses</a></li><li class="sidebar-sub-header"><a href="/features/content/bulk-content-importer.html#metadata" class="sidebar-link">Metadata</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Customization</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/features/customization/language.html" class="sidebar-link">Language</a></li><li><a href="/features/customization/routes.html" class="sidebar-link">Routes</a></li><li><a href="/features/customization/theme.html" class="sidebar-link">Theme</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Integrations</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/features/integrations/external-storage.html" class="sidebar-link">External storage</a></li><li><a href="/features/integrations/pup.html" class="sidebar-link">Pup</a></li><li><a href="/features/integrations/sharex.html" class="sidebar-link">Sharex</a></li><li><a href="/features/integrations/social-login.html" class="sidebar-link">Social login</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Reference</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/features/reference/security.html" class="sidebar-link">Security</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="bulk-content-importer"><a href="#bulk-content-importer" class="header-anchor">#</a> Bulk content importer</h1> <div class="custom-block highlight"><p class="custom-block-title">🦄 Chevereto V4 users</p><p>Check the updated documentation at <a href="https://v4-admin.chevereto.com/dashboard/bulk-importer.html" target="_blank" rel="noopener noreferrer">📥 Bulk importer<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p></div><p>This tool allows to <strong>mass import</strong> images, albums, and users by parsing the contents of a filesystem location. It is intended to be used when you want to import a massive amount of content that otherwise will be troublesome to import by using the API or the web gui.</p> <div class="custom-block tip"><p class="custom-block-title">Importing != Syncing</p> <p>Importing takes the content from the importing path and <em>import it</em> into database, filesystem or external storage. Failed files will be moved to a special directory at <code>./importing/failed/</code>.</p></div> <h2 id="how-to-use-it"><a href="#how-to-use-it" class="header-anchor">#</a> How to use it</h2> <div class="custom-block tip"><p class="custom-block-title">demo-importing</p> <p>Check the repository at <a href="https://github.com/chevereto/demo-importing" target="_blank" rel="noopener noreferrer">chevereto/demo-importing<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> for an example on how to organize your files to use the Bulk content importer.</p></div> <p>Bulk content importer works by scanning the <code>importing/</code> path, where folders are used to denote a given parsing format for the files contained within.</p> <p>Placing the content at these directories following the <a href="#parsing-formats">parsing formats</a> conventions will enable to import images to users created as a folder, add categories, etc.</p> <table><thead><tr><th><code>./importing/</code></th> <th>Parsing</th></tr></thead> <tbody><tr><td><code>parse-users/</code></td> <td><a href="#top-level-folder-as-username">Top-level folder as username</a></td></tr> <tr><td><code>parse-albums/</code></td> <td><a href="#top-level-folders-as-albums">Top-level folders as albums</a></td></tr> <tr><td><code>no-parse/</code></td> <td><a href="#no-parse">No folder parsing</a></td></tr></tbody></table> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Go to <code>dashboard/bulk</code> to review importing jobs.</p></div> <h3 id="charset"><a href="#charset" class="header-anchor">#</a> Charset</h3> <p>Files and <code>.json</code> metadata must be in UTF-8.</p> <h3 id="command"><a href="#command" class="header-anchor">#</a> Command</h3> <!----> <h3 id="cron-entry"><a href="#cron-entry" class="header-anchor">#</a> Cron entry</h3> <p>The importing command can be automatically scheduled by using <a href="https://en.wikipedia.org/wiki/Cron" target="_blank" rel="noopener noreferrer">cron<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>* * * * * COMMAND_HERE <span class="token operator">&gt;</span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span>
+</code></pre></div><h3 id="threads"><a href="#threads" class="header-anchor">#</a> Threads</h3> <p>You can speed up the process by running the importing in multiple threads by passing different <code>env</code> for <code>THREAD_ID</code>.</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sudo</span> -u www-data <span class="token assign-left variable">THREAD_ID</span><span class="token operator">=</span><span class="token number">1</span> php cli.php -C importing
+<span class="token function">sudo</span> -u www-data <span class="token assign-left variable">THREAD_ID</span><span class="token operator">=</span><span class="token number">2</span> php cli.php -C importing
+</code></pre></div><h3 id="file-locking"><a href="#file-locking" class="header-anchor">#</a> File locking</h3> <p>The importing process can be locked by placing an empty lock file at <code>./importing/.lock</code>.</p> <p>The process won't be carried until this file gets removed. This comes handy when you want to import a large dataset and you care about the nested folder structure.</p> <h2 id="parsing-formats"><a href="#parsing-formats" class="header-anchor">#</a> Parsing formats</h2> <p>The bulk importer scans the target importing directory and creates content accordingly parsing rules described below. User assets (avatar, background image) will get uploaded to the system user folder.</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>The parser creates users and albums only if those doesn't exists. It detects if <code>username</code> exists, and it does the same for albums (based on the album name + its owner).</p></div> <h3 id="top-level-folder-as-username"><a href="#top-level-folder-as-username" class="header-anchor">#</a> Top-level folder as username</h3> <p>Top-level folders within the importing path will be handled as <code>username</code>. Second-level folders will be parsed as <code>album name</code>.</p> <div class="language-shell extra-class"><pre class="language-shell"><code>./<span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>
+└── rodolfo <span class="token operator">&lt;</span>- username
+    ├── weapons <span class="token operator">&lt;</span>- album name
+    │   ├── machine-gun.jpg
+    │   └── rocket-launcher.jpg
+    └── logo-alt.png
+</code></pre></div><p>For the tree above, the parser will:</p> <ul><li>Create <code>rodolfo</code> user (if the user doesn't exists)</li> <li>Create album <code>weapons</code> under <code>rodolfo</code> user (if the album doesn't exists)</li> <li>Upload the images contained in <code>./&lt;path&gt;/rodolfo/weapons</code> to rodolfo's <code>weapons</code> album</li> <li>Upload <code>logo-alt.png</code> to <code>rodolfo</code> (no album)</li></ul> <h3 id="top-level-folders-as-albums"><a href="#top-level-folders-as-albums" class="header-anchor">#</a> Top-level folders as albums</h3> <p>Top-level folders within the importing path will be handled as <code>album_name</code>.</p> <div class="language-shell extra-class"><pre class="language-shell"><code>./<span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>
+└── weapons <span class="token operator">&lt;</span>- album name
+    ├── machine-gun.jpg
+    ├── rocket-launcher.jpg
+    └── logo-alt.png
+</code></pre></div><p>For the tree above, the parser will:</p> <ul><li>Create album <code>weapons</code> as guest user (if the album doesn't exists)</li> <li>Upload the images contained in <code>./&lt;path&gt;/weapons</code> to <code>weapons</code> album</li></ul> <h3 id="no-parse"><a href="#no-parse" class="header-anchor">#</a> No parse</h3> <p>No folder is parsed, only images will be imported as guest.</p> <div class="language-shell extra-class"><pre class="language-shell"><code>./<span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>
+├── machine-gun.jpg
+├── rocket-launcher.jpg
+└── logo-alt.png
+</code></pre></div><p>For the tree above, the parser will:</p> <ul><li>Upload the images contained in <code>./&lt;path&gt;</code> to public, as guest user.</li></ul> <h2 id="statuses"><a href="#statuses" class="header-anchor">#</a> Statuses</h2> <p>The importing jobs statuses get defined as follow:</p> <table><thead><tr><th>Status</th> <th>Description</th></tr></thead> <tbody><tr><td>Queued</td> <td>Job is in the processing queue (default status)</td></tr> <tr><td>Working</td> <td>Job is being parsed</td></tr> <tr><td>Paused</td> <td>Job is paused</td></tr> <tr><td>Canceled</td> <td>Job aborted by the user</td></tr> <tr><td>Completed</td> <td>Job completed (everything parsed)</td></tr></tbody></table> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Importing may show &quot;completed&quot; when there's nothing else to parse, but internally it will get re-queued automatically.</p></div> <h2 id="metadata"><a href="#metadata" class="header-anchor">#</a> Metadata</h2> <p>The bulk importer supports metadata using the JSON format, same as <a href="#importing-from-google-photos">Google Photos</a>. Metadata must be provided per content basis, meaning that you must use one metadata file for each content.</p> <div class="custom-block tip"><p class="custom-block-title">UTF-8</p> <p>Metadata must be in UTF-8 format. Don't forget to fix your charset.</p></div> <table><thead><tr><th>Content</th> <th>Type</th> <th>Metadata file</th></tr></thead> <tbody><tr><td><code>rodolfo/</code></td> <td>username</td> <td><code>rodolfo/metadata.json</code></td></tr> <tr><td><code>rodolfo/weapons/</code></td> <td>album</td> <td><code>rodolfo/weapons/metadata.json</code></td></tr> <tr><td><code>rodolfo/weapons/machine-gun.jpg</code></td> <td>image</td> <td><code>rodolfo/weapons/machine-gun.json</code></td></tr> <tr><td><code>rodolfo/weapons/rocket-launcher.jpg</code></td> <td>image</td> <td><code>rodolfo/weapons/rocket-launcher.json</code></td></tr> <tr><td><code>rodolfo/logo-alt.png</code></td> <td>image</td> <td><code>rodolfo/logo-alt.json</code></td></tr></tbody></table> <p>Tree below shows metadata for the table above.</p> <div class="language-shell extra-class"><pre class="language-shell"><code>./<span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>
+└── rodolfo
+    ├── weapons
+    │   ├── machine-gun.jpg
+    │   ├── machine-gun.json
+    │   ├── rocket-launcher.jpg
+    │   ├── rocket-launcher.json
+    │   └── metadata.json
+    ├── logo-alt.png
+    ├── logo-alt.json
+    └── metadata.json
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">Note</p> <p>Metadata properties merges the content being parsed, meaning that you don't need to explicitly indicate all properties, only what you need to describe.</p></div> <h3 id="image-metadata"><a href="#image-metadata" class="header-anchor">#</a> Image metadata</h3> <p>JSON metadata file below provides a sample metadata for <code>machine-gun.jpg</code>.</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;imageData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Machine gun&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Say hello to my little friend!&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;nsfw&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;category&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Guns&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;urlKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Guns&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Guns don't kill people, sugar does.&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">Image categories</p> <p>Image categories will be created if needed long as you provide both <code>name</code> and <code>urlKey</code>.</p></div> <h3 id="album-metadata"><a href="#album-metadata" class="header-anchor">#</a> Album metadata</h3> <p>JSON metadata file bellow provides a sample metadata for <code>guns/</code> album.</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;albumData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Guns&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Guns should be banned.&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;access&quot;</span><span class="token operator">:</span> <span class="token string">&quot;private&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;privacy&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;password&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;password&quot;</span><span class="token operator">:</span> <span class="token string">&quot;12345&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>For album privacy, you can pick from:</p> <table><thead><tr><th>Privacy type</th> <th>Effect</th></tr></thead> <tbody><tr><td><code>public</code></td> <td>Public album (default)</td></tr> <tr><td><code>private</code></td> <td>Private album for owner</td></tr> <tr><td><code>private_but_link</code></td> <td>Same as <code>private</code> + those with the album link</td></tr> <tr><td><code>password</code></td> <td>Will set the password for accessing the album</td></tr></tbody></table> <p>For example, if you need <code>private_but_link</code> the metadata property should look like this:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;privacy&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;private_but_link&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="user-metadata"><a href="#user-metadata" class="header-anchor">#</a> User metadata</h3> <p>JSON metadata file bellow provides a sample metadata for <code>rodolfo/</code> user.</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;userData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;role&quot;</span><span class="token operator">:</span> <span class="token string">&quot;user&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Rodolfo Berrios&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rodolfo&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rodolfo@chevereto.com&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;website&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://rodolfoberrios.com&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;bio&quot;</span><span class="token operator">:</span> <span class="token string">&quot;I'm the Master of Puppets @chevereto, the alpha-omega. He/Him/They.&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;profileImages&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;avatar&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rodo-avatar.jpg&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;background&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rodo-bkg.jpg&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;networks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;facebook&quot;</span><span class="token operator">:</span> <span class="token string">&quot;no!&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;twitter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;no!&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;timezone&quot;</span><span class="token operator">:</span> <span class="token string">&quot;America/Santiago&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;language&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cl&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;private&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Profile images have to be located in the <code>.assets/</code> folder inside the user folder.</p> <div class="language-shell extra-class"><pre class="language-shell"><code>./<span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>
+└── rodolfo
+    └── .assets
+        ├── rodo-avatar.jpg
+        └── rodo-bkg.jpg
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">User assets</p> <p>The type of the image assets must be one of the file formats handled by your installation.</p></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/chevereto/v3-docs/edit/main/features/content/bulk-content-importer.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/features/customization/language.html">
+        Language
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.7e027b56.js" defer></script><script src="/assets/js/3.c8df3c60.js" defer></script><script src="/assets/js/13.8cb048d0.js" defer></script><script src="/assets/js/8.26b444c0.js" defer></script><script src="/assets/js/5.8cd91fac.js" defer></script>
+  </body>
+</html>

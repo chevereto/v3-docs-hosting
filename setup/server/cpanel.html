@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>cPanel | V3 Docs</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.svg">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/logo.svg">
+    <link rel="mask-icon" href="/logo.svg" color="#3eaf7c">
+    <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-WL8RV7RGEN"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-WL8RV7RGEN');</script>
+    <meta name="description" content="Documentation for Chevereto image hosting software (V3)">
+    <meta name="theme-color" content="#23a8e0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/logo.svg">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="/assets/css/0.styles.feeb6d91.css" as="style"><link rel="preload" href="/assets/js/app.7e027b56.js" as="script"><link rel="preload" href="/assets/js/3.c8df3c60.js" as="script"><link rel="preload" href="/assets/js/4.55665da6.js" as="script"><link rel="preload" href="/assets/js/8.26b444c0.js" as="script"><link rel="preload" href="/assets/js/5.8cd91fac.js" as="script"><link rel="prefetch" href="/assets/js/10.5a547475.js"><link rel="prefetch" href="/assets/js/11.d519e1f3.js"><link rel="prefetch" href="/assets/js/12.5fbcf9d4.js"><link rel="prefetch" href="/assets/js/13.8cb048d0.js"><link rel="prefetch" href="/assets/js/14.fc17878b.js"><link rel="prefetch" href="/assets/js/15.8fa387b7.js"><link rel="prefetch" href="/assets/js/16.9ae1e80b.js"><link rel="prefetch" href="/assets/js/17.5fac433e.js"><link rel="prefetch" href="/assets/js/18.e57f6bae.js"><link rel="prefetch" href="/assets/js/19.bcd0674c.js"><link rel="prefetch" href="/assets/js/20.9fb8ae72.js"><link rel="prefetch" href="/assets/js/21.a52a7ee8.js"><link rel="prefetch" href="/assets/js/22.4e476823.js"><link rel="prefetch" href="/assets/js/23.13c29f17.js"><link rel="prefetch" href="/assets/js/24.051a915a.js"><link rel="prefetch" href="/assets/js/25.0b13419c.js"><link rel="prefetch" href="/assets/js/26.089daed0.js"><link rel="prefetch" href="/assets/js/27.24e5cf7b.js"><link rel="prefetch" href="/assets/js/28.ecfffaa3.js"><link rel="prefetch" href="/assets/js/29.5cebe39d.js"><link rel="prefetch" href="/assets/js/30.2f17c38c.js"><link rel="prefetch" href="/assets/js/31.50225bb5.js"><link rel="prefetch" href="/assets/js/32.73d10a16.js"><link rel="prefetch" href="/assets/js/33.d15b77d1.js"><link rel="prefetch" href="/assets/js/34.dab2aeb5.js"><link rel="prefetch" href="/assets/js/35.6fa2213c.js"><link rel="prefetch" href="/assets/js/36.4a6d9a4b.js"><link rel="prefetch" href="/assets/js/37.94e91ca7.js"><link rel="prefetch" href="/assets/js/38.6c045389.js"><link rel="prefetch" href="/assets/js/39.9487241c.js"><link rel="prefetch" href="/assets/js/40.81602670.js"><link rel="prefetch" href="/assets/js/41.d99fc085.js"><link rel="prefetch" href="/assets/js/42.d9217e04.js"><link rel="prefetch" href="/assets/js/43.72817589.js"><link rel="prefetch" href="/assets/js/44.37229739.js"><link rel="prefetch" href="/assets/js/45.e2217aaa.js"><link rel="prefetch" href="/assets/js/46.ae6c0d2d.js"><link rel="prefetch" href="/assets/js/47.4be0876b.js"><link rel="prefetch" href="/assets/js/48.d8fb2e1a.js"><link rel="prefetch" href="/assets/js/49.5eff95d0.js"><link rel="prefetch" href="/assets/js/50.b61b6ca8.js"><link rel="prefetch" href="/assets/js/51.47b9b6dd.js"><link rel="prefetch" href="/assets/js/52.ce1be02f.js"><link rel="prefetch" href="/assets/js/53.9068589d.js"><link rel="prefetch" href="/assets/js/54.35cd0349.js"><link rel="prefetch" href="/assets/js/55.8fbc48b2.js"><link rel="prefetch" href="/assets/js/56.6ea6240d.js"><link rel="prefetch" href="/assets/js/57.fd7b2712.js"><link rel="prefetch" href="/assets/js/58.ecc67709.js"><link rel="prefetch" href="/assets/js/59.788a264f.js"><link rel="prefetch" href="/assets/js/6.b8b11188.js"><link rel="prefetch" href="/assets/js/60.4cfbb791.js"><link rel="prefetch" href="/assets/js/61.8c56ebbb.js"><link rel="prefetch" href="/assets/js/62.c9b44379.js"><link rel="prefetch" href="/assets/js/63.070162c3.js"><link rel="prefetch" href="/assets/js/7.350ff68d.js"><link rel="prefetch" href="/assets/js/9.b9118161.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.3e5f6adf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.feeb6d91.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="V3 Docs" class="logo"> <span class="site-name can-hide">V3 Docs</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/get-started/" class="nav-link">
+  Get Started
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Setup Menu" class="dropdown-title"><span class="title">Setup</span> <span class="arrow down"></span></button> <button type="button" aria-label="Setup Menu" class="mobile-dropdown-title"><span class="title">Setup</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/setup/system/requirements.html" class="nav-link">
+  Requirements
+</a></li><li class="dropdown-subitem"><a href="/setup/system/environment.html" class="nav-link">
+  Environment
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Server
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/setup/server/requirements.html" class="nav-link">
+  Requirements
+</a></li><li class="dropdown-subitem"><a href="/setup/server/installation.html" class="nav-link">
+  Installation
+</a></li><li class="dropdown-subitem"><a href="/setup/server/cpanel.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  cPanel
+</a></li><li class="dropdown-subitem"><a href="/setup/server/settings-file.html" class="nav-link">
+  Settings file
+</a></li><li class="dropdown-subitem"><a href="/setup/server/updating.html" class="nav-link">
+  Updating
+</a></li><li class="dropdown-subitem"><a href="/setup/server/upgrading.html" class="nav-link">
+  Upgrading
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Container
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/setup/container/bootstrapped.html" class="nav-link">
+  Bootstrapped
+</a></li><li class="dropdown-subitem"><a href="/setup/container/registry.html" class="nav-link">
+  Registry
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Manual Menu" class="dropdown-title"><span class="title">Manual</span> <span class="arrow down"></span></button> <button type="button" aria-label="Manual Menu" class="mobile-dropdown-title"><span class="title">Manual</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          First Steps
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manual/first-steps/initial-setup.html" class="nav-link">
+  Initial setup
+</a></li><li class="dropdown-subitem"><a href="/manual/first-steps/setup-cron.html" class="nav-link">
+  Setup cron
+</a></li><li class="dropdown-subitem"><a href="/manual/first-steps/setup-email.html" class="nav-link">
+  Setup email
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Troubleshooting
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manual/troubleshooting/debug.html" class="nav-link">
+  Debug
+</a></li><li class="dropdown-subitem"><a href="/manual/troubleshooting/errors.html" class="nav-link">
+  Errors
+</a></li><li class="dropdown-subitem"><a href="/manual/troubleshooting/server-issues.html" class="nav-link">
+  Server issues
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Features Menu" class="dropdown-title"><span class="title">Features</span> <span class="arrow down"></span></button> <button type="button" aria-label="Features Menu" class="mobile-dropdown-title"><span class="title">Features</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Content
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/content/bulk-content-importer.html" class="nav-link">
+  Bulk content importer
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Customization
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/customization/language.html" class="nav-link">
+  Language
+</a></li><li class="dropdown-subitem"><a href="/features/customization/routes.html" class="nav-link">
+  Routes
+</a></li><li class="dropdown-subitem"><a href="/features/customization/theme.html" class="nav-link">
+  Theme
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Integrations
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/integrations/external-storage.html" class="nav-link">
+  External storage
+</a></li><li class="dropdown-subitem"><a href="/features/integrations/pup.html" class="nav-link">
+  Pup
+</a></li><li class="dropdown-subitem"><a href="/features/integrations/sharex.html" class="nav-link">
+  Sharex
+</a></li><li class="dropdown-subitem"><a href="/features/integrations/social-login.html" class="nav-link">
+  Social login
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Reference
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/reference/security.html" class="nav-link">
+  Security
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/settings/" class="nav-link">
+  Dashboard
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/get-started/" class="nav-link">
+  Get Started
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Setup Menu" class="dropdown-title"><span class="title">Setup</span> <span class="arrow down"></span></button> <button type="button" aria-label="Setup Menu" class="mobile-dropdown-title"><span class="title">Setup</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/setup/system/requirements.html" class="nav-link">
+  Requirements
+</a></li><li class="dropdown-subitem"><a href="/setup/system/environment.html" class="nav-link">
+  Environment
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Server
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/setup/server/requirements.html" class="nav-link">
+  Requirements
+</a></li><li class="dropdown-subitem"><a href="/setup/server/installation.html" class="nav-link">
+  Installation
+</a></li><li class="dropdown-subitem"><a href="/setup/server/cpanel.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  cPanel
+</a></li><li class="dropdown-subitem"><a href="/setup/server/settings-file.html" class="nav-link">
+  Settings file
+</a></li><li class="dropdown-subitem"><a href="/setup/server/updating.html" class="nav-link">
+  Updating
+</a></li><li class="dropdown-subitem"><a href="/setup/server/upgrading.html" class="nav-link">
+  Upgrading
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Container
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/setup/container/bootstrapped.html" class="nav-link">
+  Bootstrapped
+</a></li><li class="dropdown-subitem"><a href="/setup/container/registry.html" class="nav-link">
+  Registry
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Manual Menu" class="dropdown-title"><span class="title">Manual</span> <span class="arrow down"></span></button> <button type="button" aria-label="Manual Menu" class="mobile-dropdown-title"><span class="title">Manual</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          First Steps
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manual/first-steps/initial-setup.html" class="nav-link">
+  Initial setup
+</a></li><li class="dropdown-subitem"><a href="/manual/first-steps/setup-cron.html" class="nav-link">
+  Setup cron
+</a></li><li class="dropdown-subitem"><a href="/manual/first-steps/setup-email.html" class="nav-link">
+  Setup email
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Troubleshooting
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manual/troubleshooting/debug.html" class="nav-link">
+  Debug
+</a></li><li class="dropdown-subitem"><a href="/manual/troubleshooting/errors.html" class="nav-link">
+  Errors
+</a></li><li class="dropdown-subitem"><a href="/manual/troubleshooting/server-issues.html" class="nav-link">
+  Server issues
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Features Menu" class="dropdown-title"><span class="title">Features</span> <span class="arrow down"></span></button> <button type="button" aria-label="Features Menu" class="mobile-dropdown-title"><span class="title">Features</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Content
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/content/bulk-content-importer.html" class="nav-link">
+  Bulk content importer
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Customization
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/customization/language.html" class="nav-link">
+  Language
+</a></li><li class="dropdown-subitem"><a href="/features/customization/routes.html" class="nav-link">
+  Routes
+</a></li><li class="dropdown-subitem"><a href="/features/customization/theme.html" class="nav-link">
+  Theme
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Integrations
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/integrations/external-storage.html" class="nav-link">
+  External storage
+</a></li><li class="dropdown-subitem"><a href="/features/integrations/pup.html" class="nav-link">
+  Pup
+</a></li><li class="dropdown-subitem"><a href="/features/integrations/sharex.html" class="nav-link">
+  Sharex
+</a></li><li class="dropdown-subitem"><a href="/features/integrations/social-login.html" class="nav-link">
+  Social login
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Reference
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/features/reference/security.html" class="nav-link">
+  Security
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/settings/" class="nav-link">
+  Dashboard
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Setup</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>System</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/setup/system/requirements.html" class="sidebar-link">Requirements</a></li><li><a href="/setup/system/environment.html" class="sidebar-link">Environment</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Server</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/setup/server/requirements.html" class="sidebar-link">Requirements</a></li><li><a href="/setup/server/installation.html" class="sidebar-link">Installation</a></li><li><a href="/setup/server/cpanel.html" aria-current="page" class="active sidebar-link">cPanel</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/setup/server/cpanel.html#database" class="sidebar-link">Database</a></li><li class="sidebar-sub-header"><a href="/setup/server/cpanel.html#chevereto-files" class="sidebar-link">Chevereto Files</a></li><li class="sidebar-sub-header"><a href="/setup/server/cpanel.html#php" class="sidebar-link">PHP</a></li><li class="sidebar-sub-header"><a href="/setup/server/cpanel.html#install-chevereto" class="sidebar-link">Install Chevereto</a></li><li class="sidebar-sub-header"><a href="/setup/server/cpanel.html#php-versioning" class="sidebar-link">PHP Versioning</a></li><li class="sidebar-sub-header"><a href="/setup/server/cpanel.html#setup-cron-on-cpanel" class="sidebar-link">Setup Cron on cPanel</a></li><li class="sidebar-sub-header"><a href="/setup/server/cpanel.html#setup-email" class="sidebar-link">Setup Email</a></li></ul></li><li><a href="/setup/server/settings-file.html" class="sidebar-link">Settings file</a></li><li><a href="/setup/server/updating.html" class="sidebar-link">Updating</a></li><li><a href="/setup/server/upgrading.html" class="sidebar-link">Upgrading</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Container</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/setup/container/bootstrapped.html" class="sidebar-link">Bootstrapped</a></li><li><a href="/setup/container/registry.html" class="sidebar-link">Registry</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="cpanel"><a href="#cpanel" class="header-anchor">#</a> cPanel</h1> <div class="custom-block highlight"><p class="custom-block-title">🦄 Chevereto V4 users</p><p>Check the updated documentation at:</p> <ul><li><a href="https://v4-docs.chevereto.com/guides/cpanel/database.html" target="_blank" rel="noopener noreferrer">🐬 cPanel Database<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://v4-docs.chevereto.com/guides/cpanel/app-files.html" target="_blank" rel="noopener noreferrer">📂 cPanel App files<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://v4-docs.chevereto.com/guides/cpanel/php.html" target="_blank" rel="noopener noreferrer">🐘 cPanel PHP<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://v4-docs.chevereto.com/guides/cpanel/cron.html" target="_blank" rel="noopener noreferrer">⏲️ cPanel Cron<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div><p>This guide will enable you to install Chevereto on cPanel from scratch.</p> <h2 id="database"><a href="#database" class="header-anchor">#</a> Database</h2> <p>Go to the <strong>MySQL Database Wizard</strong> under <strong>Databases</strong>.</p> <p><img src="/assets/img/databases.f4d298e3.png" alt="databases"></p> <p>Follow the process to create a database and its user. Take note on the MySQL <strong>database name</strong>, <strong>username</strong> and <strong>password</strong>.</p> <p><img src="/assets/img/mysql-wizard-create-database.e64fa0ed.png" alt="MySQL wizard create"></p> <p>Grant <code>ALL PRIVILEGES</code> on the newly created database and user.</p> <p><img src="/assets/img/mysql-wizard-privileges.0eee95f6.png" alt="MySQL wizard privileges"></p> <h2 id="chevereto-files"><a href="#chevereto-files" class="header-anchor">#</a> Chevereto Files</h2> <ul><li>Go to <strong>File Manager</strong> under <strong>Files</strong>.</li></ul> <p><img src="/assets/img/files.4aa4878b.png" alt="Files"></p> <ul><li>Navigate to your website <code>public_html/</code> directory.</li></ul> <p><img src="/assets/img/file-manager.d1a07884.png" alt="File Manager"></p> <ul><li>Click on <strong>Upload</strong> and on <strong>Select File</strong> upload the release zip file downloaded from <a href="https://chevereto.com/panel/downloads" target="_blank" rel="noopener noreferrer">chevereto.com/panel/downloads<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>Once uploaded, go back to the file manager at <code>public_html/</code> directory.</li> <li>Right-click on the zip file file and select <strong>Extract</strong>.</li></ul> <p><img src="/assets/img/file-manager-extract.72bea043.png" alt="File Manager Extract"></p> <ul><li>A prompt appears, click on <strong>Extract Files</strong></li></ul> <p><img src="/assets/img/file-manager-extract-files.0ef60e09.png" alt="File Manager Extract Files"></p> <ul><li>Delete the zip file when the extraction completes.</li></ul> <p><img src="/assets/img/file-manager-delete-file.cf0f5fd5.png" alt="File Manager Delete File"></p> <h2 id="php"><a href="#php" class="header-anchor">#</a> PHP</h2> <p>Go to <strong>MultiPHP INI Editor</strong> under <strong>Software</strong>.</p> <p><img src="/assets/img/software.77971e2e.png" alt="Software"></p> <p>Select your website under <strong>Configure PHP INI basic settings</strong>.</p> <p><img src="/assets/img/mutliphp-ini-editor.859b4a87.png" alt="MultiPHP INI editor"></p> <p>Take note on the following configurable keys:</p> <p><img src="/assets/img/multiphp-ini-keys.83901b7f.png" alt="MultiPHP INI keys"></p> <ul><li><code>max_execution_time</code> 30</li> <li><code>memory_limit</code> 256M (min)</li> <li>Use <code>post_max_size</code> and <code>upload_max_filesize</code> to limit the file upload max. size allowed for uploads</li></ul> <p>Go to <strong>MultiPHP Manager</strong> and select <code>PHP 7.4</code> for your website.</p> <p><img src="/assets/img/multiphp-manager.88fa8221.png" alt="MultiPHP manager"></p> <ul><li>From here you can also enable the <a href="/setup/server/requirements.html#php-extensions">extensions required</a> by Chevereto.</li></ul> <div class="custom-block danger"><p class="custom-block-title">PHP Extensions</p> <p>Refer to the cPanel <a href="https://docs.cpanel.net/whm/software/php-extensions-and-applications-package/" target="_blank" rel="noopener noreferrer">PHP Extensions and Applications Package<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> and WHM <a href="https://support.cpanel.net/hc/en-us/articles/360050971633" target="_blank" rel="noopener noreferrer">How to install a PHP extension in WHM<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> documentation if your cPanel provisioning lacks the extensions required by Chevereto.</p></div> <h2 id="install-chevereto"><a href="#install-chevereto" class="header-anchor">#</a> Install Chevereto</h2> <p>Go to <code>http://your_website/</code> and follow the instructions to the create the admin account.</p> <h2 id="php-versioning"><a href="#php-versioning" class="header-anchor">#</a> PHP Versioning</h2> <div class="custom-block tip"><p class="custom-block-title">Did you know?</p> <p>cPanel uses root <code>.htaccess</code> file to add rules that enable to override the default cPanel PHP versioning. This may cause issues in your Chevereto installation.</p></div> <p>If you have PHP versioning issues make sure that the root <code>.htaccess</code> file contains the following:</p> <!----> <blockquote><p>Note that the configuration in your system may vary. Double-check with your service provider.</p></blockquote> <h2 id="setup-cron-on-cpanel"><a href="#setup-cron-on-cpanel" class="header-anchor">#</a> Setup Cron on cPanel</h2> <ul><li>Go to <strong>Cron Jobs</strong> under <strong>Advanced</strong></li> <li>Scroll to <strong>Add New Cron Job</strong></li></ul> <p><img src="/assets/img/cronjob.13a2a082.png" alt="File Manager Delete File"></p> <ul><li>Under <strong>Common Settings</strong> pick <code>Once Per Minute (* * * * *)</code></li></ul> <p>The <strong>Command</strong> varies on each installation, you need to create your own command based on the following general form:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>php-binary cli-path -C <span class="token function">cron</span> <span class="token operator">&gt;</span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span>
+</code></pre></div><ul><li><strong>php-binary</strong> Check the <code>PHP command examples</code> section under <strong>Add New Cron Job</strong> where you can learn about the PHP path for your system.</li> <li><strong>cli-path</strong> The Chevereto CLI path can be found on your Dashboard panel under <strong>Installation details</strong>.</li></ul> <h3 id="command-examples"><a href="#command-examples" class="header-anchor">#</a> Command examples</h3> <!----> <h2 id="setup-email"><a href="#setup-email" class="header-anchor">#</a> Setup Email</h2> <ul><li>Refer to: <a href="/manual/first-steps/setup-email.html">Setup Email</a></li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/chevereto/v3-docs/edit/main/setup/server/cpanel.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/setup/server/installation.html" class="prev">
+        Installation
+      </a></span> <span class="next"><a href="/setup/server/settings-file.html">
+        Settings file
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.7e027b56.js" defer></script><script src="/assets/js/3.c8df3c60.js" defer></script><script src="/assets/js/4.55665da6.js" defer></script><script src="/assets/js/8.26b444c0.js" defer></script><script src="/assets/js/5.8cd91fac.js" defer></script>
+  </body>
+</html>
